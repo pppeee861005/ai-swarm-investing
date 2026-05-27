@@ -1,0 +1,75 @@
+{
+  "version": "0.1.0",
+  "name": "ai-swarm-investing",
+
+  "watchlist": {
+    "description": "監控股票清單",
+    "stocks": [
+      { "symbol": "TSMC", "name": "台積電", "market": "TW" },
+      { "symbol": "NVDA", "name": "輝達", "market": "US" },
+      { "symbol": "AAPL", "name": "蘋果", "market": "US" },
+      { "symbol": "MSFT", "name": "微軟", "market": "US" },
+      { "symbol": "GOOGL", "name": "谷歌", "market": "US" }
+    ],
+    "max_stocks": 20
+  },
+
+  "triggers": {
+    "support_break": {
+      "enabled": true,
+      "threshold": 0.02,
+      "description": "價格跌破支撐位 2%"
+    },
+    "volume_spike": {
+      "enabled": true,
+      "threshold": 3.0,
+      "description": "成交量突增 3 倍以上"
+    },
+    "big_order": {
+      "enabled": true,
+      "threshold": 10000000,
+      "description": "大單金額閾值（1000 萬）"
+    },
+    "imbalance": {
+      "enabled": true,
+      "threshold": 0.3,
+      "description": "買賣失衡比超過 30%"
+    }
+  },
+
+  "notifications": {
+    "telegram": {
+      "enabled": true,
+      "bot_token": "YOUR_BOT_TOKEN",
+      "chat_id": "YOUR_CHAT_ID"
+    },
+    "email": {
+      "enabled": false,
+      "smtp_host": "",
+      "smtp_port": 587,
+      "from": "",
+      "to": ""
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": ""
+    }
+  },
+
+  "schedule": {
+    "interval_seconds": 60,
+    "description": "每 60 秒執行一次監控循環"
+  },
+
+  "models": {
+    "scout": "claude-3-haiku",
+    "lead": "claude-3-opus",
+    "description": "Scout 用 Haiku（輕量），Lead 用 Opus（決策）"
+  },
+
+  "limits": {
+    "max_tokens_per_cycle": 10000,
+    "max_alerts_per_hour": 10,
+    "description": "防止成本失控和預警疲勞"
+  }
+}

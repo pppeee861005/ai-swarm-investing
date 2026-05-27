@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Build
+dist/
+build/
+*.min.js
+
+# Test
+coverage/
+.nyc_output/
+
+# Secrets (NEVER commit these)
+*.pem
+*.key
+credentials.json
+secrets.json
+api_keys.json
+
+# Workflow execution history (may contain sensitive data)
+workflows/executed/
+workflows/*.log
+
+# Personal notes
+memory/personal/
+*.personal.md
+
+# Temporary files
+tmp/
+temp/
+*.tmp
