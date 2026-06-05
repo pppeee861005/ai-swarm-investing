@@ -104,14 +104,20 @@ Ultracode 我的定義書+預算書
 
 ### 🚀 三步完成
 
-**步驟 1**：打開 Claude Code → https://ultracode.io
+**步驟 1**：打開 Ultracode
+```
+🔗 https://ultracode.io （推薦）
+或
+🔗 https://claude.new （備用）
+```
 
-**步驟 2**：複製你的定義書和預算書
+**步驟 2**：準備定義書和預算書
 ```
 位置：計劃7 → examples → [你選的場景]
+操作：複製內容（Ctrl+C）
 ```
 
-**步驟 3**：輸入指令
+**步驟 3**：輸入 Ultracode 指令
 ```markdown
 Ultracode 我的定義書+預算書
 
@@ -169,42 +175,11 @@ Ultracode 我的定義書+預算書
 Ultracode 我的定義書+預算書
 
 ↓ 自動進入 Dynamic Workflow 模式
-↓ 先展示計畫，不執行
-↓ 等待你的確認再執行
+↓ 先展示計畫（免費）
+↓ 等待你的確認再執行（計費）
 ```
 
 **就這麼簡單！** 不需要複雜的提示詞，系統自動進入正確模式。
-
----
-
-#### 📍 Ultracode 官方入口
-
-```
-🌐 主入口：https://ultracode.io
-🔗 備用：https://claude.new
-🚀 GitHub 快捷：點「Open in Claude Code」按鈕
-```
-
-#### ⚡️ Ultracode 指令三步完成
-
-**第 1 步**：打開 Ultracode → https://ultracode.io
-
-**第 2 步**：準備你的定義書和預算書
-```
-找位置：計劃 7 → examples → [你選的場景]
-複製：定義書.md + 預算書.md（修改成你的需求）
-```
-
-**第 3 步**：在 Ultracode 對話框輸入
-```markdown
-Ultracode 我的定義書+預算書
-
-[貼上你的定義書]
-
-[貼上你的預算書]
-```
-
-✅ **完成！系統自動進入 Dynamic Workflow 模式。**
 
 ---
 
@@ -995,6 +970,6 @@ A：不支持。Ultracode 是線上工具，需要網絡連接。但你可以下
 ---
 
 **最後更新**：2026-06-05
-**版本**：0.3.0（Ultracode 最新版本支持）
+**版本**：0.3.1（Ultracode 極簡優化版）
 **狀態**：🟢 Ultracode 完全支持 | 🟢 四階段工作流完成 | 🟡 進階場景開發中
 
