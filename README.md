@@ -88,173 +88,239 @@ AI 的工作：
 
 ## ⚡️ Ultracode 一鍵激活（最快方式）
 
-### 🎯 什麼是 Ultracode？
+### 🎯 Ultracode 一鍵激活的真正含義
 
-**Ultracode** 是 Claude Code 的最新版本入口，可以：
-- ✅ 一鍵打開 Claude Code IDE
-- ✅ 自動加載你選擇的場景
-- ✅ 直接進入「先審查計畫」模式（零成本規劃）
-- ✅ 省去手動複製粘貼的步驟
-
-### 🚀 一鍵激活步驟
-
-#### 方式 1：從 GitHub 直接激活（推薦）
-
-1. 選擇你要的場景（下表）
-2. 點擊「定義書」鏈接
-3. 在 GitHub 頁面點擊「Open in Claude Code」或「Ultracode」按鈕
-4. ✅ Claude Code 自動打開，定義書已加載
-
-#### 方式 2：手動輸入 URL
-
-如果上面的按鈕不可見，手動輸入：
+**一句話理解**：在 Ultracode 對話框輸入特定指令，系統自動進入 Dynamic Workflow 模式（先展示計畫，不執行）。
 
 ```
-https://claude.new/?p=[GitHub 定義書的原始檔案 URL]
+【核心指令】
+Ultracode 我的定義書+預算書
+
+↓ 系統自動做：
+
+1️⃣ 識別 Ultracode 指令
+2️⃣ 加載你的定義書和預算書
+3️⃣ 進入 Dynamic Workflow 模式
+4️⃣ 先展示 Workflow Plan（不執行代碼）
+5️⃣ 等待你的確認再執行
 ```
 
-示例：
-```
-https://claude.new/?p=https://raw.githubusercontent.com/pppeee861005/ai-swarm-investing/master/examples/01-蜂群覺醒/定義書.md
-```
-
-#### 方式 3：最簡單（複製粘貼模式）
-
-1. 找到定義書.md
-2. 複製全部內容（Ctrl+A → Ctrl+C）
-3. 打開 Claude Code（ultracode.io 或 claude.new）
-4. 粘貼內容 → 開始對話
+**優勢**：一句話，自動進入完整的「先規劃、再執行」工作流。
 
 ---
 
-### ⚡️ Ultracode vs 舊 Claude Code
+### 🚀 Ultracode 一鍵激活步驟（3 步搞定）
 
-| 特性 | Ultracode | 舊版本 |
-|------|----------|--------|
-| **入口** | ultracode.io 或 claude.new | claude.ai/code |
-| **啟動速度** | ⚡ 超快（<1 秒） | 正常（~3 秒） |
-| **快捷方式** | GitHub 一鍵打開 | 手動打開 IDE |
-| **檔案加載** | 自動預加載 | 手動上傳 |
-| **計費規則** | 計畫階段免費 | 相同 |
-| **推薦用法** | 此計劃優化版本 | 傳統開發 |
-
-**重點**：Ultracode 和舊版本的計費規則完全相同，只是入口更方便！
-
----
-
-### 📌 Ultracode 最新版指令入口
-
-**最新版指令入口已經更新為**：
+#### 步驟 1️⃣：打開 Ultracode
 
 ```
-Ultracode 專用指令入口
-─────────────────────
-入口 URL：https://ultracode.io
-備用 URL：https://claude.new
-GitHub 集成：「Open in Claude Code」按鈕
+🔗 Ultracode 官方入口
+   https://ultracode.io
+   或
+   https://claude.new
 ```
 
-**重點記住**：
-- 🎯 **新版本 = Ultracode**
-- 🔗 **指令入口 = ultracode.io 或 claude.new**
-- ⚡️ **最快激活 = GitHub 一鍵打開**
+**最快方式**：GitHub 頁面點「Open in Claude Code」按鈕
 
----
+#### 步驟 2️⃣：複製你的定義書和預算書
 
-### 🔥 實戰示例：從 GitHub 一鍵打開
-
-#### 步驟 1：進入 GitHub 倉庫
 ```
-https://github.com/pppeee861005/ai-swarm-investing
-```
-
-#### 步驟 2：導航到定義書
-```
+位置：計劃7 → examples → [選擇場景]
 例如：examples/01-蜂群覺醒/定義書.md
+
+操作：
+  Ctrl+A（全選）
+  Ctrl+C（複製定義書）
+  然後複製預算書
 ```
 
-#### 步驟 3：點擊「Open in Claude Code」
-GitHub 上會顯示按鈕，點擊直接打開 Ultracode
+#### 步驟 3️⃣：輸入 Ultracode 一鍵激活指令
 
-#### 步驟 4：Claude Code 自動打開
-```
-✓ Ultracode IDE 已打開
-✓ 定義書已預加載
-✓ 準備開始對話
-```
+在 Ultracode 對話框輸入：
 
-#### 步驟 5：输入明确指令
-```
-【任務】根據定義書設計 Workflow 計畫，先不執行
+```markdown
+Ultracode 我的定義書+預算書
 
-請根據上面的定義書設計一個 Dynamic Workflow 計畫。
-⚠️ 重點：只展示計畫，不要執行代碼，不要消耗 Token。
+[貼上你修改後的定義書]
 
-[定義書已自動加載，無需貼上]
-[預算控制請自行貼上或在對話中說明]
-
-請生成：
-1. 📊 Workflow 架構圖
-2. 🔄 執行流程圖
-3. 💰 成本估算
-4. ✅ 計畫確認清單
+[貼上你修改後的預算書]
 ```
 
-#### 步驟 6：檢查計畫
-```
-Claude Code 回應：
-✓ 架構圖已生成
-✓ 流程圖已生成
-✓ 成本估算完成
-✓ 確認清單已列出
+**就這樣！** 系統自動進入 Dynamic Workflow 模式。
 
-你的選擇：
-  ✅ 「確認執行」
-  🔄 「需要修改」
-  ❌ 「取消」
+---
+
+### 🎯 Ultracode 指令後發生什麼？
+
+#### 自動進入 Dynamic Workflow 模式
+
+```
+✅ 步驟 1：系統識別「Ultracode」指令
+           ↓
+✅ 步驟 2：系統加載你的定義書和預算書
+           ↓
+✅ 步驟 3：進入 Dynamic Workflow 模式
+           ↓
+📊 步驟 4：展示 Workflow Plan（完整計畫）
+           • 架構圖
+           • 流程圖
+           • 成本估算
+           • 確認清單
+           ↓
+⏸️ 步驟 5：等待你的確認
+           • ✅ 「確認執行」→ 開始燃燒 Token
+           • 🔄 「需要修改」→ 重新規劃（免費）
+           • ❌ 「取消」→ 安全退出（零成本）
+```
+
+**關鍵點**：步驟 1-4 完全免費！只有你說「確認執行」，才開始計費。
+
+---
+
+### 📝 完整實例：Ultracode 一鍵激活
+
+#### 你在 Ultracode 輸入的內容：
+
+```markdown
+Ultracode 我的定義書+預算書
+
+## 我的定義書
+
+# 蜂群覺醒 — 多股票實時監控定義書
+
+> **故事背景**：散戶面臨「眼睛跟不上市場」的困境...
+
+[完整的定義書內容...]
+
+## 我的預算書
+
+# 蜂群覺醒 — 預算控制書
+
+總預算：0.3 單位
+預期成本：0.12 單位
+
+[完整的預算控制內容...]
+```
+
+#### Ultracode 自動回應：
+
+```markdown
+✅ Ultracode 一鍵激活完成
+
+已進入 Dynamic Workflow 模式
+─────────────────────────
+
+## Dynamic Workflow 執行計畫 — 蜂群覺醒
+
+### 1️⃣ Workflow 架構圖
+[ASCII 架構圖]
+
+### 2️⃣ 執行流程圖
+[流程圖]
+
+### 3️⃣ 成本估算
+[成本表]
+
+### 4️⃣ 計畫確認清單
+□ 功能完整性：✅
+□ 成本合理性：✅
+□ 執行可行性：✅
+
+─────────────────────────
+
+**你現在的選擇**：
+
+✅ 「確認無誤，開始執行」
+   → 我會生成代碼並執行（開始計費）
+
+🔄 「需要修改 X 部分」
+   → 我會重新設計（還是免費）
+
+❌ 「取消」
+   → 保存計畫供未來參考（零成本）
 ```
 
 ---
 
-### 💡 何時使用 Ultracode
+### 💡 Ultracode 指令的 3 個核心優勢
 
-| 情況 | 推薦方式 |
-|------|--------|
-| 第一次用，想快速開始 | ⚡️ Ultracode 一鍵打開 |
-| 已經有定義書，想快速測試 | ⚡️ GitHub 按鈕 → Ultracode |
-| 想邊看文檔邊操作 | ⚡️ 在 GitHub 頁面用 Ultracode |
-| 已在 Claude Code 中，想快速切換場景 | 手動複製粘貼 |
-| 想離線工作或有隱私要求 | 下載定義書到本地 |
+| 優勢 | 說明 | 節省 |
+|------|------|------|
+| **一句話激活** | 不需要複雜指導，一個「Ultracode」指令搞定 | ⏱️ 10 秒 |
+| **自動進入正確模式** | 系統識別指令，自動進入「先規劃、再執行」模式 | 🧠 0 思考 |
+| **完全免費規劃** | 展示計畫階段完全免費，修改多少次都不計費 | 💰 0 Token |
 
 ---
 
-### ⚡️ 三個最快的激活方式排序
+### ⚡️ Ultracode vs 傳統方式對比
 
-**1️⃣ 最快（3 秒）**
+| 方面 | 傳統方式 | Ultracode 方式 |
+|------|--------|--------------|
+| **激活方式** | 手動寫複雜提示詞 | 「Ultracode 我的定義書+預算書」 |
+| **進入模式** | 需要明確說「先不執行」 | 自動進入正確模式 |
+| **複製粘貼** | 定義書 + 預算書 + 提示詞 | 定義書 + 預算書 |
+| **速度** | ~30 秒 | ~10 秒 |
+| **出錯率** | 高（可能輸入錯誤） | 低（系統自動識別） |
+| **計費規則** | 相同 | 相同 |
+
+**結論**：Ultracode 指令模式更簡潔、更快速、更不容易出錯。
+
+---
+
+### 🎯 何時使用 Ultracode 一鍵激活
+
 ```
-打開 GitHub → 點「Open in Claude Code」
-✓ 定義書自動加載
-✓ 直接開始對話
-✓ 零準備時間
+✅ 使用 Ultracode：
+   • 第一次用計劃 7
+   • 想快速進入 Dynamic Workflow 模式
+   • 不想寫複雜的提示詞
+   • 害怕執行時出錯
+
+❌ 不用 Ultracode：
+   • 已經在對話中，想簡單說一句「執行」
+   • 自己習慣複雜的提示詞
+   • 想完全自定義工作流程
 ```
 
-**2️⃣ 次快（10 秒）**
+**推薦**：所有新手都應該使用 Ultracode 指令，因為它最簡單、最不容易出錯。
+
+---
+
+### ⚠️ Ultracode 一鍵激活的 3 個常見誤解
+
+**❌ 誤解 1**：「Ultracode 會自動執行代碼」
 ```
-Ctrl+C 複製定義書
-→ ultracode.io
-→ Ctrl+V 粘貼
-→ 開始對話
+✅ 事實：Ultracode 只展示計畫，不執行。
+          你需要說「確認執行」才會消耗 Token
 ```
 
-**3️⃣ 常規（20 秒）**
+**❌ 誤解 2**：「Ultracode 比舊方式更貴」
 ```
-打開 Claude Code
-→ 新建會話
-→ 上傳定義書
-→ 開始對話
+✅ 事實：計費規則完全相同。
+          規劃階段免費，執行才計費
 ```
 
-**建議**：使用方式 1（GitHub 一鍵打開）是最快的！
+**❌ 誤解 3**：「Ultracode 指令必須用特定格式」
+```
+✅ 事實：基本格式就是「Ultracode 我的定義書+預算書」
+          定義書和預算書的順序和位置都很靈活
+```
+
+---
+
+### 📌 記住這一句話就夠了
+
+```
+Ultracode 我的定義書+預算書
+
+↓
+
+自動進入 Dynamic Workflow 模式
+先展示計畫，不執行代碼
+等待你的確認再執行
+```
+
+**這就是 Ultracode 一鍵激活的全部！**
 
 ---
 
@@ -275,24 +341,50 @@ Ctrl+C 複製定義書
   - 預算上限（改成你的成本預算）
 ```
 
-### Step 3：用 Ultracode 激活 Workflow（⚡️ 最新實戰版）
+### Step 3：用 Ultracode 一鍵激活 Workflow（⚡️ 最新實戰版）
 
-#### 🎯 快速提醒：Ultracode 就是最新版 Claude Code
+#### 🎯 最重要的一句話
 
 ```
-📍 最新版指令入口
-─────────────────────
-Ultracode = Claude Code 最新版本
-入口 URL = https://ultracode.io (推薦)
-備用 URL = https://claude.new
-GitHub 集成 = 「Open in Claude Code」按鈕
+Ultracode 我的定義書+預算書
+
+↓ 自動進入 Dynamic Workflow 模式
+↓ 先展示計畫，不執行
+↓ 等待你的確認再執行
 ```
 
-**你需要知道的**：
-- ✅ Ultracode 和舊版本計費規則完全相同
-- ✅ Ultracode 只是進入方式更快更方便
-- ✅ 所有下面的指令在 Ultracode 中執行效果相同
-- ⚡️ 推薦在 GitHub 用「Open in Claude Code」直接打開
+**就這麼簡單！** 不需要複雜的提示詞，系統自動進入正確模式。
+
+---
+
+#### 📍 Ultracode 官方入口
+
+```
+🌐 主入口：https://ultracode.io
+🔗 備用：https://claude.new
+🚀 GitHub 快捷：點「Open in Claude Code」按鈕
+```
+
+#### ⚡️ Ultracode 指令三步完成
+
+**第 1 步**：打開 Ultracode → https://ultracode.io
+
+**第 2 步**：準備你的定義書和預算書
+```
+找位置：計劃 7 → examples → [你選的場景]
+複製：定義書.md + 預算書.md（修改成你的需求）
+```
+
+**第 3 步**：在 Ultracode 對話框輸入
+```markdown
+Ultracode 我的定義書+預算書
+
+[貼上你的定義書]
+
+[貼上你的預算書]
+```
+
+✅ **完成！系統自動進入 Dynamic Workflow 模式。**
 
 ---
 
@@ -983,53 +1075,84 @@ MIT License — 自由使用、修改、商用。
 
 ## ⚡️ Ultracode 快速參考卡
 
-**如果你只記得一件事**，就記住這個：
+### 🎯 最核心的指令（只需記住一句話）
 
 ```
-🎯 目標：用最快的方式啟動 Workflow
+Ultracode 我的定義書+預算書
 
-⚡️ 最快方式（3 秒）：
-   1. 找到定義書 in GitHub
-   2. 點「Open in Claude Code」
-   3. ✓ Ultracode 自動打開
-
-🔗 Ultracode 官方鏈接：
-   • 主入口：https://ultracode.io
-   • 備用：https://claude.new
-   • GitHub 按鈕：直接點擊
+↓ 自動進入 Dynamic Workflow 模式
+↓ 先展示計畫（免費）
+↓ 等你確認後才執行（開始計費）
 ```
 
-### Ultracode 三步啟動清單
+---
+
+### 📍 Ultracode 官方鏈接
 
 ```
-□ 步驟 1：選場景
-  從上面的 7 個場景中選一個（按難度選）
+🌐 主入口（推薦）
+   https://ultracode.io
 
-□ 步驟 2：點「Open in Claude Code」
-  GitHub 頁面上有按鈕（如果沒有，用備用方式）
+🔗 備用入口
+   https://claude.new
 
-□ 步驟 3：輸入明確指令
-  【任務】根據定義書設計 Workflow 計畫，先不執行
-
-  （定義書已自動加載，只需說明修改或確認）
+🚀 GitHub 快捷方式
+   在定義書頁面點「Open in Claude Code」
 ```
 
-### Ultracode 常見問題速解
+---
 
-**Q：Ultracode 和舊 Claude Code 有什麼區別？**
-A：沒有本質區別。Ultracode 只是進入方式更快，計費規則完全相同。
+### 🚀 Ultracode 一鍵激活三步清單
 
-**Q：我應該用 Ultracode 還是舊的 claude.ai/code？**
-A：都可以。推薦用 Ultracode 因為更快，但如果習慣舊的也沒問題。
+```
+□ 步驟 1：打開 Ultracode
+  URL：https://ultracode.io
 
-**Q：「Open in Claude Code」按鈕在哪裡？**
-A：GitHub 文件頁面的右上角。如果沒看到，直接複製定義書內容到 ultracode.io
+□ 步驟 2：準備定義書和預算書
+  位置：計劃 7 → examples → [你選的場景]
+  操作：複製內容（Ctrl+C）
+
+□ 步驟 3：輸入 Ultracode 指令
+  Ultracode 我的定義書+預算書
+  [貼上定義書]
+  [貼上預算書]
+
+✅ 完成！自動進入 Dynamic Workflow 模式
+```
+
+---
+
+### ❓ Ultracode 常見問題速解
+
+**Q：「Ultracode 我的定義書+預算書」這句話是幹什麼的？**
+A：這是激活指令。系統識別後會自動進入 Dynamic Workflow 模式，先展示計畫（不執行）。
+
+**Q：系統怎麼知道我的定義書和預算書是什麼？**
+A：因為你在下面貼上了。系統會讀取你貼上的內容，理解你的需求。
+
+**Q：「Ultracode 我的定義書+預算書」的順序重要嗎？**
+A：不重要。順序隨意，系統會自動識別。你也可以說「Ultracode，看我的定義書和預算書」。
+
+**Q：這個指令會立即執行代碼嗎？**
+A：不會。它只展示計畫。只有你說「確認執行」，才會開始消耗 Token。
 
 **Q：Ultracode 免費嗎？**
-A：是的。計費規則和舊版本完全相同：規劃階段免費，執行才計費。
+A：完全免費（規劃階段）。只有你說「確認執行」後，才開始計費。計費規則和舊版本完全相同。
 
-**Q：我可以離線使用嗎？**
-A：Ultracode 是線上工具，需要網絡連接。但你可以下載定義書文件本地保存。
+**Q：Ultracode 和舊 Claude Code 有什麼區別？**
+A：只是進入方式和指令模式不同。計費規則、計算能力、支持的功能都完全相同。
+
+**Q：我一定要用 Ultracode 指令嗎？**
+A：不一定。你也可以手動寫提示詞。但 Ultracode 指令更簡潔、更快速、更不容易出錯。
+
+**Q：如果我輸入了 Ultracode 指令但改主意了，怎麼辦？**
+A：在系統展示計畫後，你可以說「取消」。零成本，安全退出。或說「需要修改」，系統重新規劃（還是免費）。
+
+**Q：定義書和預算書要貼在哪裡？**
+A：就在「Ultracode 我的定義書+預算書」這句話下面，用 Markdown 代碼塊或直接貼上都可以。
+
+**Q：Ultracode 支持離線使用嗎？**
+A：不支持。Ultracode 是線上工具，需要網絡連接。但你可以下載定義書文件本地保存，之後聯網時再用。
 
 ---
 
