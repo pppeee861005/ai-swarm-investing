@@ -86,10 +86,182 @@ AI 的工作：
 
 ---
 
+## ⚡️ Ultracode 一鍵激活（最快方式）
+
+### 🎯 什麼是 Ultracode？
+
+**Ultracode** 是 Claude Code 的最新版本入口，可以：
+- ✅ 一鍵打開 Claude Code IDE
+- ✅ 自動加載你選擇的場景
+- ✅ 直接進入「先審查計畫」模式（零成本規劃）
+- ✅ 省去手動複製粘貼的步驟
+
+### 🚀 一鍵激活步驟
+
+#### 方式 1：從 GitHub 直接激活（推薦）
+
+1. 選擇你要的場景（下表）
+2. 點擊「定義書」鏈接
+3. 在 GitHub 頁面點擊「Open in Claude Code」或「Ultracode」按鈕
+4. ✅ Claude Code 自動打開，定義書已加載
+
+#### 方式 2：手動輸入 URL
+
+如果上面的按鈕不可見，手動輸入：
+
+```
+https://claude.new/?p=[GitHub 定義書的原始檔案 URL]
+```
+
+示例：
+```
+https://claude.new/?p=https://raw.githubusercontent.com/pppeee861005/ai-swarm-investing/master/examples/01-蜂群覺醒/定義書.md
+```
+
+#### 方式 3：最簡單（複製粘貼模式）
+
+1. 找到定義書.md
+2. 複製全部內容（Ctrl+A → Ctrl+C）
+3. 打開 Claude Code（ultracode.io 或 claude.new）
+4. 粘貼內容 → 開始對話
+
+---
+
+### ⚡️ Ultracode vs 舊 Claude Code
+
+| 特性 | Ultracode | 舊版本 |
+|------|----------|--------|
+| **入口** | ultracode.io 或 claude.new | claude.ai/code |
+| **啟動速度** | ⚡ 超快（<1 秒） | 正常（~3 秒） |
+| **快捷方式** | GitHub 一鍵打開 | 手動打開 IDE |
+| **檔案加載** | 自動預加載 | 手動上傳 |
+| **計費規則** | 計畫階段免費 | 相同 |
+| **推薦用法** | 此計劃優化版本 | 傳統開發 |
+
+**重點**：Ultracode 和舊版本的計費規則完全相同，只是入口更方便！
+
+---
+
+### 📌 Ultracode 最新版指令入口
+
+**最新版指令入口已經更新為**：
+
+```
+Ultracode 專用指令入口
+─────────────────────
+入口 URL：https://ultracode.io
+備用 URL：https://claude.new
+GitHub 集成：「Open in Claude Code」按鈕
+```
+
+**重點記住**：
+- 🎯 **新版本 = Ultracode**
+- 🔗 **指令入口 = ultracode.io 或 claude.new**
+- ⚡️ **最快激活 = GitHub 一鍵打開**
+
+---
+
+### 🔥 實戰示例：從 GitHub 一鍵打開
+
+#### 步驟 1：進入 GitHub 倉庫
+```
+https://github.com/pppeee861005/ai-swarm-investing
+```
+
+#### 步驟 2：導航到定義書
+```
+例如：examples/01-蜂群覺醒/定義書.md
+```
+
+#### 步驟 3：點擊「Open in Claude Code」
+GitHub 上會顯示按鈕，點擊直接打開 Ultracode
+
+#### 步驟 4：Claude Code 自動打開
+```
+✓ Ultracode IDE 已打開
+✓ 定義書已預加載
+✓ 準備開始對話
+```
+
+#### 步驟 5：输入明确指令
+```
+【任務】根據定義書設計 Workflow 計畫，先不執行
+
+請根據上面的定義書設計一個 Dynamic Workflow 計畫。
+⚠️ 重點：只展示計畫，不要執行代碼，不要消耗 Token。
+
+[定義書已自動加載，無需貼上]
+[預算控制請自行貼上或在對話中說明]
+
+請生成：
+1. 📊 Workflow 架構圖
+2. 🔄 執行流程圖
+3. 💰 成本估算
+4. ✅ 計畫確認清單
+```
+
+#### 步驟 6：檢查計畫
+```
+Claude Code 回應：
+✓ 架構圖已生成
+✓ 流程圖已生成
+✓ 成本估算完成
+✓ 確認清單已列出
+
+你的選擇：
+  ✅ 「確認執行」
+  🔄 「需要修改」
+  ❌ 「取消」
+```
+
+---
+
+### 💡 何時使用 Ultracode
+
+| 情況 | 推薦方式 |
+|------|--------|
+| 第一次用，想快速開始 | ⚡️ Ultracode 一鍵打開 |
+| 已經有定義書，想快速測試 | ⚡️ GitHub 按鈕 → Ultracode |
+| 想邊看文檔邊操作 | ⚡️ 在 GitHub 頁面用 Ultracode |
+| 已在 Claude Code 中，想快速切換場景 | 手動複製粘貼 |
+| 想離線工作或有隱私要求 | 下載定義書到本地 |
+
+---
+
+### ⚡️ 三個最快的激活方式排序
+
+**1️⃣ 最快（3 秒）**
+```
+打開 GitHub → 點「Open in Claude Code」
+✓ 定義書自動加載
+✓ 直接開始對話
+✓ 零準備時間
+```
+
+**2️⃣ 次快（10 秒）**
+```
+Ctrl+C 複製定義書
+→ ultracode.io
+→ Ctrl+V 粘貼
+→ 開始對話
+```
+
+**3️⃣ 常規（20 秒）**
+```
+打開 Claude Code
+→ 新建會話
+→ 上傳定義書
+→ 開始對話
+```
+
+**建議**：使用方式 1（GitHub 一鍵打開）是最快的！
+
+---
+
 ## 🚀 快速開始（3 步，5 分鐘）
 
 ### Step 1：選擇場景
-點擊上表的「定義書」鏈接，選你感興趣的
+點擊下表的「定義書」鏈接，選你感興趣的
 
 ### Step 2：下載 + 修改（2 個文件）
 ```bash
@@ -103,7 +275,26 @@ AI 的工作：
   - 預算上限（改成你的成本預算）
 ```
 
-### Step 3：用 Claude Code 激活 Workflow（⚡️ 最新實戰版）
+### Step 3：用 Ultracode 激活 Workflow（⚡️ 最新實戰版）
+
+#### 🎯 快速提醒：Ultracode 就是最新版 Claude Code
+
+```
+📍 最新版指令入口
+─────────────────────
+Ultracode = Claude Code 最新版本
+入口 URL = https://ultracode.io (推薦)
+備用 URL = https://claude.new
+GitHub 集成 = 「Open in Claude Code」按鈕
+```
+
+**你需要知道的**：
+- ✅ Ultracode 和舊版本計費規則完全相同
+- ✅ Ultracode 只是進入方式更快更方便
+- ✅ 所有下面的指令在 Ultracode 中執行效果相同
+- ⚡️ 推薦在 GitHub 用「Open in Claude Code」直接打開
+
+---
 
 #### 🎯 核心原則：「先審查計畫，再燃燒 Token」
 
@@ -790,6 +981,58 @@ MIT License — 自由使用、修改、商用。
 
 ---
 
+## ⚡️ Ultracode 快速參考卡
+
+**如果你只記得一件事**，就記住這個：
+
+```
+🎯 目標：用最快的方式啟動 Workflow
+
+⚡️ 最快方式（3 秒）：
+   1. 找到定義書 in GitHub
+   2. 點「Open in Claude Code」
+   3. ✓ Ultracode 自動打開
+
+🔗 Ultracode 官方鏈接：
+   • 主入口：https://ultracode.io
+   • 備用：https://claude.new
+   • GitHub 按鈕：直接點擊
+```
+
+### Ultracode 三步啟動清單
+
+```
+□ 步驟 1：選場景
+  從上面的 7 個場景中選一個（按難度選）
+
+□ 步驟 2：點「Open in Claude Code」
+  GitHub 頁面上有按鈕（如果沒有，用備用方式）
+
+□ 步驟 3：輸入明確指令
+  【任務】根據定義書設計 Workflow 計畫，先不執行
+
+  （定義書已自動加載，只需說明修改或確認）
+```
+
+### Ultracode 常見問題速解
+
+**Q：Ultracode 和舊 Claude Code 有什麼區別？**
+A：沒有本質區別。Ultracode 只是進入方式更快，計費規則完全相同。
+
+**Q：我應該用 Ultracode 還是舊的 claude.ai/code？**
+A：都可以。推薦用 Ultracode 因為更快，但如果習慣舊的也沒問題。
+
+**Q：「Open in Claude Code」按鈕在哪裡？**
+A：GitHub 文件頁面的右上角。如果沒看到，直接複製定義書內容到 ultracode.io
+
+**Q：Ultracode 免費嗎？**
+A：是的。計費規則和舊版本完全相同：規劃階段免費，執行才計費。
+
+**Q：我可以離線使用嗎？**
+A：Ultracode 是線上工具，需要網絡連接。但你可以下載定義書文件本地保存。
+
+---
+
 ## 📞 聯繫方式
 
 - **Substack**：[AI 指揮官](https://aiagentcommander.substack.com)
@@ -808,7 +1051,7 @@ MIT License — 自由使用、修改、商用。
 
 ---
 
-**最後更新**：2026-05-29
-**版本**：0.2.0
-**狀態**：🟢 主要功能完成 | 🟡 進階功能開發中 | 🔴 高級功能規劃中
+**最後更新**：2026-06-05
+**版本**：0.3.0（Ultracode 最新版本支持）
+**狀態**：🟢 Ultracode 完全支持 | 🟢 四階段工作流完成 | 🟡 進階場景開發中
 
